@@ -1,0 +1,8 @@
+/target/
+.old
+dist_win7/
+*.zip
+*.tar.gz
+README-WINDOWS.txt
+README-LINUX.txt
+
