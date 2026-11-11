@@ -1,0 +1,10 @@
+[package]
+name = "curie-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "no_std + alloc domain logic and radioactive decay physics for Curie-DAQ"
+
+[lints]
+workspace = true
