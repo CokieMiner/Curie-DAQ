@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Deep Obsidian -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181B22"/>
+      <stop offset="50%" stop-color="#12151B"/>
+      <stop offset="100%" stop-color="#0A0C0F"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#1F2937"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Trefoil Amber Gradient -->
+    <linearGradient id="trefoil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Cyan Pulse Glow -->
+    <linearGradient id="cyanPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.2"/>
+      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#00F0FF"/>
+      <stop offset="60%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background App Squircle Badge: perfectly centered at 256, 256 -->
+  <rect x="16" y="16" width="480" height="480" rx="108" ry="108" fill="url(#bg)" stroke="url(#border)" stroke-width="4"/>
+
+  <!-- Subtle Instrument Reticle Grid Lines: centered at 256, 256 -->
+  <circle cx="256" cy="256" r="188" fill="none" stroke="#1E293B" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="256" cy="256" r="216" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Subtle Crosshair ticks: symmetric at 256 -->
+  <line x1="256" y1="38" x2="256" y2="54" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+  <line x1="256" y1="458" x2="256" y2="474" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+  <line x1="38" y1="256" x2="54" y2="256" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+  <line x1="458" y1="256" x2="474" y2="256" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+
+  <!-- Trefoil Radiation Symbol (Golden Amber): centered exactly at 256, 256 -->
+  <path d="M 282.00 210.97 L 334.00 120.90 A 156.0 156.0 0 0 0 178.00 120.90 L 230.00 210.97 A 52.0 52.0 0 0 1 282.00 210.97 Z" fill="url(#trefoil)"/>
+  <path d="M 204.00 256.00 L 100.00 256.00 A 156.0 156.0 0 0 0 178.00 391.10 L 230.00 301.03 A 52.0 52.0 0 0 1 204.00 256.00 Z" fill="url(#trefoil)"/>
+  <path d="M 282.00 301.03 L 334.00 391.10 A 156.0 156.0 0 0 0 412.00 256.00 L 308.00 256.00 A 52.0 52.0 0 0 1 282.00 301.03 Z" fill="url(#trefoil)"/>
+  <circle cx="256" cy="256" r="34.0" fill="url(#trefoil)"/>
+  <circle cx="256" cy="256" r="14" fill="#12151B"/>
+
+  <!-- Oscilloscope / DAQ Pulse Waveform: peak centered exactly at x=256 -->
+  <path d="M 48 418 L 224 418 C 238 418 248 414 256 332 C 264 414 274 428 290 422 C 304 418 320 418 464 418" 
+        fill="none" stroke="url(#cyanPulse)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Symmetrical Peak Dot at x=256 -->
+  <circle cx="256" cy="332" r="4.5" fill="#00F0FF"/>
+</svg>

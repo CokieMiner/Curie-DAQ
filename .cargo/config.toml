@@ -1,0 +1,13 @@
+[target.x86_64-pc-windows-gnu]
+rustflags = ["-C", "link-args=-static -static-libgcc"]
+
+[target.i686-pc-windows-gnu]
+rustflags = ["-C", "link-args=-static -static-libgcc"]
+
+[target.x86_64-win7-windows-gnu]
+rustflags = ["-C", "link-args=-static -static-libgcc"]
+
+[target.i686-win7-windows-gnu]
+rustflags = ["-C", "link-args=-static -static-libgcc"]
+
+
